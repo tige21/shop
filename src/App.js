@@ -64,6 +64,9 @@ function App (){
     // }
 
     const minus = (obj) =>{
+      if (obj.count <= 0){
+        return
+      }
       const mas = [...itemsCart]
       const index = mas.indexOf(obj)
       const objFound = mas[index]
@@ -72,9 +75,10 @@ function App (){
       const mas1 = [...priceCart]
       const indexPr = mas1.indexOf(pr)
 
-      delete mas1[indexPr]
+      var removed = mas1.splice(indexPr, 1)
       setPriceCart(mas1)
-      console.log(mas1)
+      console.log(removed)
+      
 
     }
 
