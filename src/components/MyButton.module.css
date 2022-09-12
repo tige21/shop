@@ -1,0 +1,12 @@
+.btn{
+    padding: 20px 30px;
+    border: 1px solid teal;
+    background-color: white;
+
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}

@@ -1,0 +1,18 @@
+.Loader{
+    border: 2px dashed teal;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: rotate 10s infinite linear
+
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
